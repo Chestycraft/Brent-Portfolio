@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.top_indent{
+    margin-top: 50px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  position: relative;
+  margin: 1rem 0;
+  @apply border-white
+}
+
+@theme{
+  --color-card1: #1a1a1a;
+  --color-primary:#8FD0E3;
+
+  --color-heading1:white;
+
+}
+
+h1, h2, h3, h4, h5{@apply text-heading1;
+font-family: 'Major Mono Display', monospace; /* For monospace style */}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #1A1A1A 0%,    /* dark gray base */
+    #092f3b 30%,   /* slightly lighter gray */
+    #026383,   /* muted teal-blue */
+    #092f3b 85%,   /* soft icy blue accent */
+    #1a1a1a 100%   /* brighter cyan glow */
+  );
+    @apply text-primary;
+      font-family: 'Inter', sans-serif; /* Default body font */
+
+}
+
+button{ @apply bg-white text-[#1a1a1a] cursor-pointer }
+
+button:disabled {
+  @apply bg-gray-300 text-gray-500 cursor-not-allowed;
+}
+
+/* Example usage of your Google Fonts */
+
+.non-dark{
+  font-family: 'Major Mono Display', monospace;
+  color: white;
+}
+
+.mono-text {
+  font-family: 'Major Mono Display', monospace; /* For monospace style */
+}
+
+.logo{
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 400;
+    color: white;
+}
+
+a{@apply text-white;
+border-bottom: 2px dashed #B0C4D9;
+padding: 5px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+  border-bottom: 2px solid #B0C4D9;
+  cursor: pointer;
+  color: aqua;
+}
